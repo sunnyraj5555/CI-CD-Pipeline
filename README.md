@@ -21,3 +21,9 @@ Creating a chain between the jobs and adding upstream and downstream jobs
 - Upstream jobs: The job which will run before the current job is upstream job 
 - Downstream jobs: The job which is run after the succesful execution of this job
 (ex. **Build** is upstrem job - **Deploy**  - downstream job is **Test**)
+
+- Now move configure > Build Target of (**SampleDeployJob**)
+![image](https://user-images.githubusercontent.com/59870615/186911304-3ef90bbc-bd59-477a-af34-527713a53a4d.png)
+![image](https://user-images.githubusercontent.com/59870615/186911474-6a5a3e67-7d3d-440f-90be-818b17c2e4b9.png)
+- Now select ```Trigger only if build is stable``` option and make SampleBuildJob as upstream.
+- Repeat the same step for the Test, Release jobs also. 
